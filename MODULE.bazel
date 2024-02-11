@@ -1,2 +1,16 @@
 # TODO: migrate all dependencies from WORKSPACE to MODULE.bazel
 # https://github.com/protocolbuffers/protobuf/issues/14313
+
+module(
+    name = "protobuf",
+    version = "26.0",
+)
+
+bazel_dep(name = "rules_cc", version = "0.0.8")
+bazel_dep(name = "rules_java", version = "7.3.2")
+bazel_dep(name = "rules_pkg", version = "0.9.1")
+bazel_dep(name = "rules_proto", version = "6.0.0-rc2")
+bazel_dep(name = "rules_python", version = "0.28.0")
+bazel_dep(name = "bazel_skylib", version = "1.5.0")
+bazel_dep(name = "platforms", version = "0.0.8")
+bazel_dep(name = "abseil-cpp", version = "20240116.0")

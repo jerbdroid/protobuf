@@ -14,7 +14,7 @@ cc_library(
         ":rust_alloc_for_cpp_api",  # buildcleaner: keep
         "//:protobuf",
         "//:protobuf_lite",
-        "@com_google_absl//absl/strings:string_view",
+        "@abseil-cpp//absl/strings:string_view",
     ],
 )
 

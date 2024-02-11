@@ -60,8 +60,8 @@ cc_library(
         "//upb_generator:file_layout",
         "//upb_generator:keywords",
         "//upb_generator:names",
-        "@com_google_absl//absl/container:flat_hash_set",
-        "@com_google_absl//absl/strings",
+        "@abseil-cpp//absl/container:flat_hash_set",
+        "@abseil-cpp//absl/strings",
     ],
 )
 
@@ -73,8 +73,8 @@ cc_library(
     deps = [
         "//:protobuf",
         "//src/google/protobuf/io",
-        "@com_google_absl//absl/log:absl_log",
-        "@com_google_absl//absl/strings",
+        "@abseil-cpp//absl/log:absl_log",
+        "@abseil-cpp//absl/strings",
     ],
 )
 
@@ -86,7 +86,7 @@ cc_library(
     deps = [
         "//:protobuf",
         "//src/google/protobuf/compiler:code_generator",
-        "@com_google_absl//absl/strings",
+        "@abseil-cpp//absl/strings",
     ],
 )
 

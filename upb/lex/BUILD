@@ -35,7 +35,7 @@ cc_test(
     srcs = ["atoi_test.cc"],
     deps = [
         ":lex",
-        "@com_google_absl//absl/strings",
+        "@abseil-cpp//absl/strings",
         "@com_google_googletest//:gtest",
         "@com_google_googletest//:gtest_main",
     ],

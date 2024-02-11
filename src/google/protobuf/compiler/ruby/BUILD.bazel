@@ -23,9 +23,9 @@ cc_library(
         "//src/google/protobuf/compiler:retention",
         "//src/google/protobuf/io",
         "//src/google/protobuf/io:printer",
-        "@com_google_absl//absl/container:flat_hash_set",
-        "@com_google_absl//absl/log:absl_log",
-        "@com_google_absl//absl/strings",
+        "@abseil-cpp//absl/container:flat_hash_set",
+        "@abseil-cpp//absl/log:absl_log",
+        "@abseil-cpp//absl/strings",
     ],
 )
 

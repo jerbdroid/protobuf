@@ -105,7 +105,7 @@ bootstrap_cc_library(
         ":mangle",
         "//upb:mini_table",
         "//upb:port",
-        "@com_google_absl//absl/strings",
+        "@abseil-cpp//absl/strings",
     ],
 )
 
@@ -129,8 +129,8 @@ bootstrap_cc_library(
         "//upb:mini_descriptor",
         "//upb:mini_table",
         "//upb:port",
-        "@com_google_absl//absl/container:flat_hash_map",
-        "@com_google_absl//absl/strings",
+        "@abseil-cpp//absl/container:flat_hash_map",
+        "@abseil-cpp//absl/strings",
     ],
 )
 
@@ -160,10 +160,10 @@ bootstrap_cc_library(
     visibility = ["//protos_generator:__pkg__"],
     deps = [
         "//upb:port",
-        "@com_google_absl//absl/container:flat_hash_set",
-        "@com_google_absl//absl/log:absl_check",
-        "@com_google_absl//absl/log:absl_log",
-        "@com_google_absl//absl/strings",
+        "@abseil-cpp//absl/container:flat_hash_set",
+        "@abseil-cpp//absl/log:absl_check",
+        "@abseil-cpp//absl/log:absl_log",
+        "@abseil-cpp//absl/strings",
     ],
 )
 
@@ -183,9 +183,9 @@ bootstrap_cc_library(
     deps = [
         "//:protobuf",
         "//src/google/protobuf/compiler:code_generator",
-        "@com_google_absl//absl/base:core_headers",
-        "@com_google_absl//absl/container:flat_hash_map",
-        "@com_google_absl//absl/strings",
+        "@abseil-cpp//absl/base:core_headers",
+        "@abseil-cpp//absl/container:flat_hash_map",
+        "@abseil-cpp//absl/strings",
     ],
 )
 
@@ -199,7 +199,7 @@ cc_library(
         "//upb:friends",
     ],
     deps = [
-        "@com_google_absl//absl/strings",
+        "@abseil-cpp//absl/strings",
     ],
 )
 
@@ -268,11 +268,11 @@ bootstrap_cc_binary(
         "//upb:mini_table",
         "//upb:port",
         "//upb:wire_reader",
-        "@com_google_absl//absl/container:flat_hash_map",
-        "@com_google_absl//absl/container:flat_hash_set",
-        "@com_google_absl//absl/log:absl_check",
-        "@com_google_absl//absl/log:absl_log",
-        "@com_google_absl//absl/strings",
+        "@abseil-cpp//absl/container:flat_hash_map",
+        "@abseil-cpp//absl/container:flat_hash_set",
+        "@abseil-cpp//absl/log:absl_check",
+        "@abseil-cpp//absl/log:absl_log",
+        "@abseil-cpp//absl/strings",
     ],
 )
 
@@ -308,11 +308,11 @@ bootstrap_cc_library(
         "//upb:mini_table",
         "//upb:port",
         "//upb:wire_reader",
-        "@com_google_absl//absl/container:flat_hash_map",
-        "@com_google_absl//absl/container:flat_hash_set",
-        "@com_google_absl//absl/log:absl_check",
-        "@com_google_absl//absl/log:absl_log",
-        "@com_google_absl//absl/strings",
+        "@abseil-cpp//absl/container:flat_hash_map",
+        "@abseil-cpp//absl/container:flat_hash_set",
+        "@abseil-cpp//absl/log:absl_check",
+        "@abseil-cpp//absl/log:absl_log",
+        "@abseil-cpp//absl/strings",
     ],
 )
 
@@ -330,8 +330,8 @@ bootstrap_cc_binary(
     deps = [
         "//upb:base",
         "//upb:port",
-        "@com_google_absl//absl/log:absl_check",
-        "@com_google_absl//absl/log:absl_log",
+        "@abseil-cpp//absl/log:absl_check",
+        "@abseil-cpp//absl/log:absl_log",
     ],
 )
 
@@ -353,7 +353,7 @@ cc_binary(
     ],
     copts = UPB_DEFAULT_CPPOPTS,
     # To work around the following link error from ABSL:
-    # /usr/bin/x86_64-linux-gnu-ld: bazel-out/k8-opt-exec-2B5CBBC6-ST-c1776f9924ec/bin/external/com_google_absl/absl/time/libtime.a(duration.o): undefined reference to symbol 'floor@@GLIBC_2.2.5'
+    # /usr/bin/x86_64-linux-gnu-ld: bazel-out/k8-opt-exec-2B5CBBC6-ST-c1776f9924ec/bin/external/abseil-cpp/absl/time/libtime.a(duration.o): undefined reference to symbol 'floor@@GLIBC_2.2.5'
     # /usr/bin/x86_64-linux-gnu-ld: /opt/manylinux/2014/x86_64/lib64/libm.so.6: error adding symbols: DSO missing from command line
     # clang-14: error: linker command failed with exit code 1 (use -v to see invocation)
     linkopts = ["-lm"],
@@ -398,7 +398,7 @@ cc_binary(
         "//upb:base",
         "//upb:mem",
         "//upb:port",
-        "@com_google_absl//absl/log:absl_log",
-        "@com_google_absl//absl/strings",
+        "@abseil-cpp//absl/log:absl_log",
+        "@abseil-cpp//absl/strings",
     ],
 )

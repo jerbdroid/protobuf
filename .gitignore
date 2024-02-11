@@ -212,3 +212,5 @@ compile_commands.json
 
 # Ignore GHA NodeJS files
 .github/**/node_modules/
+
+build

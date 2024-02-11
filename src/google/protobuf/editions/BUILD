@@ -52,7 +52,7 @@ cc_binary(
     visibility = ["//visibility:public"],
     deps = [
         "//src/google/protobuf",
-        "@com_google_absl//absl/strings",
+        "@abseil-cpp//absl/strings",
     ],
 )
 
@@ -80,12 +80,12 @@ cc_test(
         "//src/google/protobuf/stubs",
         "//src/google/protobuf/testing",
         "//src/google/protobuf/testing:file",
+        "@abseil-cpp//absl/memory",
+        "@abseil-cpp//absl/status",
+        "@abseil-cpp//absl/status:statusor",
+        "@abseil-cpp//absl/strings",
+        "@abseil-cpp//absl/strings:string_view",
         "@bazel_tools//tools/cpp/runfiles",
-        "@com_google_absl//absl/memory",
-        "@com_google_absl//absl/status",
-        "@com_google_absl//absl/status:statusor",
-        "@com_google_absl//absl/strings",
-        "@com_google_absl//absl/strings:string_view",
         "@com_google_googletest//:gtest",
         "@com_google_googletest//:gtest_main",
     ],

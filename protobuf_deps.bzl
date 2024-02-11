@@ -39,9 +39,9 @@ def protobuf_deps():
             sha256 = "74d544d96f4a5bb630d465ca8bbcfe231e3594e5aae57e1edbf17a6eb3ca2506",
         )
 
-    if not native.existing_rule("com_google_absl"):
+    if not native.existing_rule("abseil-cpp"):
         _github_archive(
-            name = "com_google_absl",
+            name = "abseil-cpp",
             repo = "https://github.com/abseil/abseil-cpp",
             commit = "4a2c63365eff8823a5221db86ef490e828306f9d",  # Abseil LTS 20240116.0
             sha256 = "f49929d22751bf70dd61922fb1fd05eb7aec5e7a7f870beece79a6e28f0a06c1",

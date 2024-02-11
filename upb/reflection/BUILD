@@ -182,7 +182,7 @@ cc_test(
         "//upb:port",
         "//upb:reflection",
         "//upb/hash",
-        "@com_google_absl//absl/strings",
+        "@abseil-cpp//absl/strings",
         "@com_google_googletest//:gtest",
         "@com_google_googletest//:gtest_main",
     ],

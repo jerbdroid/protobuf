@@ -35,8 +35,8 @@ cc_library(
         "//upb:mem",
         "//upb:message",
         "//upb:message_copy",
-        "@com_google_absl//absl/base:core_headers",
-        "@com_google_absl//absl/strings",
+        "@abseil-cpp//absl/base:core_headers",
+        "@abseil-cpp//absl/strings",
     ],
 )
 
@@ -60,10 +60,10 @@ cc_library(
         "//upb:mini_table",
         "//upb:wire",
         "//upb:wire_reader",
-        "@com_google_absl//absl/status",
-        "@com_google_absl//absl/status:statusor",
-        "@com_google_absl//absl/strings",
-        "@com_google_absl//absl/strings:str_format",
+        "@abseil-cpp//absl/status",
+        "@abseil-cpp//absl/status:statusor",
+        "@abseil-cpp//absl/strings",
+        "@abseil-cpp//absl/strings:str_format",
     ],
 )
 
@@ -87,9 +87,9 @@ cc_library(
         "//upb:mem",
         "//upb:message",
         "//upb:mini_table",
-        "@com_google_absl//absl/status",
-        "@com_google_absl//absl/status:statusor",
-        "@com_google_absl//absl/strings:str_format",
+        "@abseil-cpp//absl/status",
+        "@abseil-cpp//absl/status:statusor",
+        "@abseil-cpp//absl/strings:str_format",
     ],
 )
 
@@ -101,8 +101,8 @@ cc_library(
     visibility = ["//visibility:public"],
     deps = [
         "//upb:message",
-        "@com_google_absl//absl/base:core_headers",
-        "@com_google_absl//absl/synchronization",
+        "@abseil-cpp//absl/base:core_headers",
+        "@abseil-cpp//absl/synchronization",
     ],
 )
 
@@ -161,8 +161,8 @@ cc_test(
         "//protos:protos_extension_lock",
         "//protos_generator/tests:test_model_upb_cc_proto",
         "//upb:mem",
-        "@com_google_absl//absl/hash",
-        "@com_google_absl//absl/log:absl_check",
+        "@abseil-cpp//absl/hash",
+        "@abseil-cpp//absl/log:absl_check",
         "@com_google_googletest//:gtest",
         "@com_google_googletest//:gtest_main",
     ],
