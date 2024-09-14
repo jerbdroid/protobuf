@@ -214,3 +214,4 @@ compile_commands.json
 .github/**/node_modules/
 
 build
+install
